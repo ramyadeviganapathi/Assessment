@@ -43,22 +43,27 @@ public class lennox extends baseClass {
 	@Test
 	private void tc1() throws IOException, InterruptedException {
 		lennoxPojo l = new lennoxPojo();
+		clickbtn(l.getSign());
+		Thread.sleep(8000);
+		passtext(l.getUserName(), excelRead("Details", 1, 4));
+		passtext(l.getPass(), excelRead("Details", 1, 5));
+		clickbtn(l.getSignin());
+		Thread.sleep(8000);
 		clickbtn(l.getMenu());
 		String text = l.getProduct().getText();
 		System.out.println(text);
 		String data = excelRead("Details", 1, 6);
 		Assert.assertEquals(text, data);
 		clickbtn(l.getProduct());
-		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(30))
-				.pollingEvery(Duration.ofSeconds(5)).ignoring(NoSuchElementException.class);
-		wait.until(ExpectedConditions.elementToBeClickable(l.getScroll()));
+		Thread.sleep(8000);
 		scrolldown(l.getScroll());
+		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(30)).pollingEvery(Duration.ofSeconds(10)).ignoring(NoSuchElementException.class);
+		wait.until(ExpectedConditions.elementToBeClickable(l.getParts()));
 		clickbtn(l.getParts());
-		Wait<WebDriver> wait1 = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(30))
-				.pollingEvery(Duration.ofSeconds(5)).ignoring(NoSuchElementException.class);
-		wait1.until(ExpectedConditions.elementToBeClickable(l.getScrollcom()));
+		Thread.sleep(8000);
 		scrolldown(l.getScrollcom());
-
+		Wait<WebDriver> wait1 = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(30)).pollingEvery(Duration.ofSeconds(10)).ignoring(NoSuchElementException.class);
+		wait1.until(ExpectedConditions.elementToBeClickable(l.getCompressor()));
 		clickbtn(l.getCompressor());
 
 		String data1 = l.getComhead().getText();
@@ -69,16 +74,16 @@ public class lennox extends baseClass {
 		Assert.assertEquals(data2, "Shop for HVAC compressors on LennoxPros.com.");
 		passtext(l.getSearchbox(), excelRead("Details", 1, 10));
 		clickbtn(l.getSearch());
-		String head1 = l.getHead().getText();
-		System.out.println(head1);
-
+		Thread.sleep(8000);
 		String head2 = l.getHead1().getText();
 		System.out.println(head2);
 		String substring = head2.substring(15, 25);
 		System.out.println(substring);
 		String data3 = excelRead("Details", 1, 11);
 		Assert.assertEquals(data3, substring);
-
+		String price = l.getPrice().getText();
+		System.out.println(price);
+		
 		if (head2.equals("Bristol")) {
 			System.out.println("Passed");
 		} else {
@@ -89,6 +94,8 @@ public class lennox extends baseClass {
 			FileUtils.copyFile(source, destination);
 			testCase.addScreenCaptureFromPath("F:\\Java_Programs\\BikeInformation\\lennoxProject\\images\\pass.png");
 		}
+		Thread.sleep(3000);
+		scrolldown(l.getCart());
 		clickbtn(l.getCart());
 	}
 
