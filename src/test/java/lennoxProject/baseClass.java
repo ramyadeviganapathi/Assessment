@@ -77,5 +77,10 @@ public class baseClass {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollIntoView(true)", element);
 	}
+	public static String getAttributereturn(WebElement element) {
+		String enteredTxt = element.getAttribute("value");
+		System.out.println(enteredTxt);
+		return enteredTxt;
 
+}
 }

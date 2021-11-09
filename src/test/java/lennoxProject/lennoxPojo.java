@@ -13,6 +13,18 @@ public class lennoxPojo extends baseClass {
 	@CacheLookup
 	@FindBy(id = "samlSignInLink")
 	private WebElement sign;
+	
+	@CacheLookup
+	@FindBy(xpath = "//input[@id='signInName']")
+	private WebElement userName;
+	
+	@CacheLookup
+	@FindBy(xpath = "//input[@id='password']")
+	private WebElement pass;
+	
+	@CacheLookup
+	@FindBy(xpath = "//button[@id='continue']")
+	private WebElement signin;
 
 	@CacheLookup
 	@FindBy(xpath = "//i[@class='far fa-bars v2-hamburger-menu']")
@@ -27,7 +39,7 @@ public class lennoxPojo extends baseClass {
 	private WebElement parts;
 
 	@CacheLookup
-	@FindBy(xpath = "//div[@class='col-md-12 col-lg-3 col-sm-12 shop-by-category']//descendant::a[14]")
+	@FindBy(xpath = "//a[text()='Parts and Supplies']")
 	private WebElement scroll;
 
 	@CacheLookup
@@ -47,7 +59,7 @@ public class lennoxPojo extends baseClass {
 	private WebElement scrollcom;
 
 	@CacheLookup
-	@FindBy(xpath = "//div[@class='product-content mt-0 mb-0']/h1")
+	@FindBy(xpath = "//h1[@class='mb-0 pb-3']")
 	private WebElement head;
 
 	@CacheLookup
@@ -55,7 +67,7 @@ public class lennoxPojo extends baseClass {
 	private WebElement head1;
 
 	@CacheLookup
-	@FindBy(xpath = "(//button[@type='submit'])[4]")
+	@FindBy(xpath = "//span[text()='Add to Cart']")
 	private WebElement cart;
 
 	@CacheLookup
@@ -65,7 +77,27 @@ public class lennoxPojo extends baseClass {
 	@CacheLookup
 	@FindBy(xpath = "//div[@class='description']/p")
 	private WebElement comText;
+	
+	@CacheLookup
+	@FindBy(xpath = "//div[@class='price-box clearfix']/child::p")
+	private WebElement price;
 
+	public WebElement getPrice() {
+		return price;
+	}
+
+	public WebElement getUserName() {
+		return userName;
+	}
+
+	public WebElement getPass() {
+		return pass;
+	}
+
+	public WebElement getSignin() {
+		return signin;
+	}
+	
 	public WebElement getComText() {
 		return comText;
 	}
