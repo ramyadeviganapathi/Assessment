@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="33390" started-at="2021-11-09T10:01:55 IST" finished-at="2021-11-09T10:02:28 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="33390" started-at="2021-11-09T10:01:55 IST" finished-at="2021-11-09T10:02:28 IST">
+      <class name="lennoxProject.lennox">
+        <test-method status="PASS" signature="browserLaunch()[pri:0, instance:lennoxProject.lennox@7e0e6aa2]" name="browserLaunch" is-config="true" duration-ms="14195" started-at="2021-11-09T10:01:55 IST" finished-at="2021-11-09T10:02:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserLaunch -->
+        <test-method status="PASS" signature="tc1()[pri:0, instance:lennoxProject.lennox@7e0e6aa2]" name="tc1" duration-ms="18343" started-at="2021-11-09T10:02:09 IST" finished-at="2021-11-09T10:02:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc1 -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:lennoxProject.lennox@7e0e6aa2]" name="closeBrowser" is-config="true" duration-ms="808" started-at="2021-11-09T10:02:27 IST" finished-at="2021-11-09T10:02:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- lennoxProject.lennox -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
