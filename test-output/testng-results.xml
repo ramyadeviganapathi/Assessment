@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="102828" started-at="2021-11-09T13:21:04 IST" finished-at="2021-11-09T13:22:47 IST">
+  <suite name="Default suite" duration-ms="42517" started-at="2021-11-13T14:42:01 IST" finished-at="2021-11-13T14:42:44 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="102828" started-at="2021-11-09T13:21:04 IST" finished-at="2021-11-09T13:22:47 IST">
+    <test name="Default test" duration-ms="42517" started-at="2021-11-13T14:42:01 IST" finished-at="2021-11-13T14:42:44 IST">
       <class name="lennoxProject.lennox">
-        <test-method status="PASS" signature="browserLaunch()[pri:0, instance:lennoxProject.lennox@7e0e6aa2]" name="browserLaunch" is-config="true" duration-ms="24445" started-at="2021-11-09T13:21:04 IST" finished-at="2021-11-09T13:21:28 IST">
+        <test-method status="PASS" signature="browserLaunch()[pri:0, instance:lennoxProject.lennox@371a67ec]" name="browserLaunch" is-config="true" duration-ms="7071" started-at="2021-11-13T14:42:01 IST" finished-at="2021-11-13T14:42:08 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserLaunch -->
-        <test-method status="PASS" signature="tc1()[pri:0, instance:lennoxProject.lennox@7e0e6aa2]" name="tc1" duration-ms="72235" started-at="2021-11-09T13:21:28 IST" finished-at="2021-11-09T13:22:41 IST">
+        <test-method status="PASS" signature="tc1()[pri:0, instance:lennoxProject.lennox@371a67ec]" name="tc1" duration-ms="35142" started-at="2021-11-13T14:42:08 IST" finished-at="2021-11-13T14:42:43 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc1 -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:lennoxProject.lennox@7e0e6aa2]" name="closeBrowser" is-config="true" duration-ms="6048" started-at="2021-11-09T13:22:41 IST" finished-at="2021-11-09T13:22:47 IST">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:lennoxProject.lennox@371a67ec]" name="closeBrowser" is-config="true" duration-ms="282" started-at="2021-11-13T14:42:43 IST" finished-at="2021-11-13T14:42:44 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

@@ -36,7 +36,7 @@ public class baseClass {
 
 	public static String excelRead(String Sheet, int rn, int cellNum) throws IOException {
 
-		File f = new File("F:\\Java_Programs\\BikeInformation\\lennoxProject\\Excel\\lennoxPros.xlsx");
+		File f = new File(System.getProperty("user.dir")+"\\Excel\\lennoxPros.xlsx");
 
 		FileInputStream fis = new FileInputStream(f);
 		Workbook workbook = new XSSFWorkbook(fis);
