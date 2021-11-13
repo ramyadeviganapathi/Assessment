@@ -44,6 +44,7 @@ public class lennox extends baseClass {
 
 	@Test
 	private void tc1() throws IOException, InterruptedException {
+		System.out.println("Lennox Interview");
 		System.out.println("New Push");
 		lennoxPojo l = new lennoxPojo();
 		clickbtn(l.getSign());
