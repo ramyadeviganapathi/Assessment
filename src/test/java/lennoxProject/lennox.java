@@ -44,6 +44,7 @@ public class lennox extends baseClass {
 
 	@Test
 	private void tc1() throws IOException, InterruptedException {
+		System.out.println("New Push");
 		lennoxPojo l = new lennoxPojo();
 		clickbtn(l.getSign());
 		passtext(l.getUserName(), excelRead("Details", 1, 4));
